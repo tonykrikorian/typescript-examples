@@ -1,5 +1,4 @@
-export interface IRepository<T> {
-  getAll: () => Array<T>;
-  getItem: (id: number) => T;
-  addItem: (item: T) => T;
+export interface IRepositoryGetItems<T> {
+  getAll: () => Promise<Array<T>>;
+  getItem: (id: number) => Promise<T>;
 }
