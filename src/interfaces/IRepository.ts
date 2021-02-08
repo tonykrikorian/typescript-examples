@@ -1,4 +1,4 @@
 export interface IRepositoryGetItems<T> {
-  getAll: () => Promise<Array<T>>;
-  getItem: (id: number) => Promise<T>;
+  getAll: <T>() => Promise<void>;
+  // getItem: (id: number) => Promise<T>;
 }

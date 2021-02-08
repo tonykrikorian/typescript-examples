@@ -16,6 +16,7 @@
   "author": "Tony Krikorian <tony.krikorian@outlook.com>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "ts-node": "^9.1.1"
   },
   "devDependencies": {
