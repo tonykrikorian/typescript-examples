@@ -1,0 +1,25 @@
+{
+  "name": "example-02",
+  "version": "1.0.0",
+  "description": "Practiva number 02 typescript language backend",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "typescript",
+    "npm"
+  ],
+  "author": "Tony Krikorian <tony.krikorian@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.3"
+  }
+}
