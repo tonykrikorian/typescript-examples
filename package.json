@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./src/index.ts",
     "build": "tsc",
-    "test": "mocha -r ts-node/register ./src/tests/**/*.test.ts",
+    "test": "mocha -r ts-node/register ./src/tests/**/*.test.ts --watch",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "mocha": {
