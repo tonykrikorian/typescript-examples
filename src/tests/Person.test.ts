@@ -23,7 +23,11 @@ describe("Person Class", () => {
   });
 
   describe("Get Fullname", () => {
-    const person = new Person("Tony", "Krikorian", "Architect");
+    let person: Person;
+    beforeEach(() => {
+      person = new Person("Tony", "Krikorian", "Architect");
+    });
+
     it("Get full name", () => {
       let result = "Tony Krikorian";
       expect(result).to.be.eq(person.getFullName());
@@ -31,6 +35,10 @@ describe("Person Class", () => {
     it("Get Fullname + position", () => {
       let result = "Architect Tony Krikorian";
       expect(result).to.be.eq(person.getFullPosition());
+    });
+    it("Get cool things we are building", () => {
+      let success = "Building cool things";
+      expect(success).to.eq(Person.logFavoriteProtocol());
     });
   });
 });
