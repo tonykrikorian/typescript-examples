@@ -3,7 +3,7 @@ import Math from "../modules/Math";
 
 const math = new Math();
 
-describe("Unit testing Math Class", () => {
+describe.skip("Unit testing Math Class", () => {
   describe("Sum Method", () => {
     it("Sum two numbers", () => {
       let result = 12;
