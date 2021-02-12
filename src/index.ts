@@ -1,5 +1,7 @@
 import Person from "./modules/Person";
 import Math from "./modules/Math";
+import Repositorio from "./modules/Repository";
+import { User } from "./types/User";
 let firstanme: string = "Tony";
 
 let value: any = 6;
@@ -24,3 +26,11 @@ employees.forEach((value) => console.log(value.getFullPosition()));
 
 const calcular: Math = new Math();
 console.log(calcular.sum(1, 2, 3, 4));
+
+const repository = new Repositorio();
+
+const personas = repository
+  .getAll<User>("https://jsonplaceholder.typicode.com/users")
+  .catch((error) => console.log(error));
+
+console.log(personas);

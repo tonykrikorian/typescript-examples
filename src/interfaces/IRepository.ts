@@ -1,4 +1,5 @@
+import { User } from "../types/User";
+
 export interface IRepositoryGetItems<T> {
-  getAll: <T>() => Promise<void>;
-  // getItem: (id: number) => Promise<T>;
+  getAll: <T>(url: string) => Promise<T[]>;
 }
