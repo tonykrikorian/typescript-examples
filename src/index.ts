@@ -34,3 +34,5 @@ const personas = repository
   .catch((error) => console.log(error));
 
 console.log(personas);
+
+console.log(calcular.sumArrayNumbers([1, 2, 3, 4, 10, 11]));

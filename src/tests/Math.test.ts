@@ -3,7 +3,7 @@ import Math from "../modules/Math";
 
 const math = new Math();
 
-describe.skip("Unit testing Math Class", () => {
+describe("Unit testing Math Class", () => {
   describe("Sum Method", () => {
     it("Sum two numbers", () => {
       let result = 12;
@@ -17,6 +17,13 @@ describe.skip("Unit testing Math Class", () => {
     it("Sum numbers no parameters", () => {
       let result = 0;
       expect(result).to.be.eq(math.sum());
+    });
+  });
+  describe("Sumar un array de enteros", () => {
+    it("Sumar array de enteros positivos", () => {
+      let values: number[] = [1, 2, 3, 4, 10, 11];
+      let result: number = 31;
+      expect(result).to.be.eq(math.sumArrayNumbers(values));
     });
   });
 });

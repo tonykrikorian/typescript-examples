@@ -4,4 +4,6 @@ export interface IMath {
     number2: number,
     ...numbers: Array<number>
   ) => number | undefined;
+
+  sumArrayNumbers: (ar: number[]) => number;
 }

@@ -11,6 +11,13 @@ export default class Math implements IMath {
       return this.sumNumbersReduce(number1, number2, numbers);
   }
 
+  sumArrayNumbers(ar: number[]): number {
+    let result: number = ar.reduce(
+      (prev: number, current: number) => prev + current
+    );
+    return result;
+  }
+
   private sumNumbers(a: number, b: number): number {
     return a + b;
   }
