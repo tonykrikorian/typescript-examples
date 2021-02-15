@@ -36,3 +36,8 @@ const personas = repository
 console.log(personas);
 
 console.log(calcular.sumArrayNumbers([1, 2, 3, 4, 10, 11]));
+
+let a: number[] = [1, 2, 3];
+let b: number[] = [3, 2, 1];
+
+console.log(calcular.compareArrayTripelts(a, b));

@@ -17,7 +17,9 @@
   "author": "Tony Krikorian <tony.krikorian@outlook.com>",
   "license": "ISC",
   "dependencies": {
+    "@types/chai-arrays": "^2.0.0",
     "axios": "^0.21.1",
+    "chai-arrays": "^2.2.0",
     "mocha": "^8.2.1",
     "ts-node": "^9.1.1"
   },

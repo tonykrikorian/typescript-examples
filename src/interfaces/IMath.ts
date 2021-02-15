@@ -6,4 +6,6 @@ export interface IMath {
   ) => number | undefined;
 
   sumArrayNumbers: (ar: number[]) => number;
+
+  compareArrayTripelts: (a: number[], b: number[]) => number[];
 }
