@@ -1,8 +1,10 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-undef */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable quotes */
 import chai from "chai";
 import Math from "../modules/Math";
+
 const assertArrays = require("chai-arrays");
 
 chai.use(assertArrays);
