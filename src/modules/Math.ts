@@ -1,3 +1,11 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
+/* eslint-disable import/extensions */
+/* eslint-disable lines-between-class-members */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable prefer-const */
+/* eslint-disable no-plusplus */
+/* eslint-disable class-methods-use-this */
 import { IMath } from "../interfaces/IMath";
 
 export default class Math implements IMath {
@@ -17,8 +25,7 @@ export default class Math implements IMath {
     ...numbers: Array<number>
   ): number | undefined {
     if (numbers.length === 0) return this.sumNumbers(number1, number2);
-    if (numbers.length > 0)
-      return this.sumNumbersReduce(number1, number2, numbers);
+    return this.sumNumbersReduce(number1, number2, numbers);
   }
 
   sumArrayNumbers(ar: number[]): number {
