@@ -19,14 +19,14 @@ describe("Unit testing Math Class", () => {
       expect(result).to.be.eq(math.sum());
     });
   });
-  describe("Sumar un array de enteros", () => {
+  describe.skip("Sumar un array de enteros", () => {
     it("Sumar array de enteros positivos", () => {
       let values: number[] = [1, 2, 3, 4, 10, 11];
       let result: number = 31;
       expect(result).to.be.eq(math.sumArrayNumbers(values));
     });
   });
-  describe("Test method compareArrayTripelts", () => {
+  describe.skip("Test method compareArrayTripelts", () => {
     describe("Comparar arrays", () => {
       it("Comparar una triplet", () => {
         let a: number[] = [1, 2, 3];
