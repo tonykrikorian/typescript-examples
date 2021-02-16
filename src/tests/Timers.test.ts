@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import Timers from "../modules/Timers";
 
-describe("Testing Tiemers Class", () => {
+describe.skip("Testing Tiemers Class", () => {
   describe("Testing DelayFunction Method", () => {
     let timers: Timers;
     beforeEach(() => {

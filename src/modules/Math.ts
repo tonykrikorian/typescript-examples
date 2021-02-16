@@ -10,15 +10,16 @@ import { IMath } from "../interfaces/IMath";
 
 export default class Math implements IMath {
   compareArrayTripelts(a: number[], b: number[]): number[] {
-    // let a = [1, 2, 3];
-    // let b = [3, 2, 1];
-    let result: number[] = [];
+    let alice: number = 0;
+    let bob: number = 0;
+
     for (let i = 0; i < a.length; i++) {
-      if (a[i] > b[i]) result.push(1);
-      if (a[i] < b[i]) result.push(1);
+      if (a[i] > b[i]) ++alice;
+      if (a[i] < b[i]) ++bob;
     }
-    return result;
+    return [alice, bob];
   }
+
   sum(
     number1: number = 0,
     number2: number = 0,

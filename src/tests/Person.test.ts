@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import Person from "../modules/Person";
 
-describe("Person Class", () => {
+describe.skip("Person Class", () => {
   //Se ejecuta antes de cada test
   beforeEach(() => {
     console.log("Before each test");
