@@ -50,4 +50,10 @@ export default class Math implements IMath {
     );
     return result + a + b;
   }
+
+  aVeryBigSum(arr: number[]): number {
+    return arr.reduce(
+      (prevValue: number, current: number) => prevValue + current
+    );
+  }
 }

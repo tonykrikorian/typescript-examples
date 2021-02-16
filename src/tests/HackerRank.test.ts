@@ -39,4 +39,23 @@ describe("Test Math Class", () => {
       chai.expect(result).to.eq(math.sumArrayNumbers(values));
     });
   });
+
+  describe("Test aVeryBigSum function", () => {
+    let math: Math;
+    beforeEach(() => {
+      math = new Math();
+    });
+    it("aVeryBigSum sum testing", () => {
+      const expected: number = 5000000015;
+      const numbers: number[] = [
+        1000000001,
+        1000000002,
+        1000000003,
+        1000000004,
+        1000000005,
+      ];
+
+      chai.expect(expected).to.eq(math.aVeryBigSum(numbers));
+    });
+  });
 });
