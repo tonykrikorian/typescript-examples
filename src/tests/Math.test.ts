@@ -1,6 +1,5 @@
 import chai, { expect } from "chai";
 import Math from "../modules/Math";
-import {} from "chai-arrays";
 
 const math = new Math();
 
